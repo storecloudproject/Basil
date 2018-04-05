@@ -1,4 +1,4 @@
-*Basil: An open source proposal for improving the throughput of Tendermint(™), a BFT consensus algorithm*
+#Basil: An open source proposal for improving the throughput of Tendermint(™), a BFT consensus algorithm#
 
 (NOTE: This is not a Whitepaper; it’s a contribution to the Tendermint open source project)
 
