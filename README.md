@@ -48,7 +48,7 @@ Tendermint core offloads the trust responsibilities to the associated ABCI app. 
 
 Fig. 1 below shows the traditional interaction between Tendermint core and ABCI app.
 
-![image alt text](image_0.png)
+![Tendermint core and ABCI app](tm_core_abci.png)
 
 Fig. 1 — Interaction between Tendermint core and ABCI app
 
@@ -187,7 +187,7 @@ We alluded to a new API, SequenceTx() above. This new interface must be added to
 
 In order to fulfill the management of shared mempool, getTxs(), and removeTx() interfaces are also added to the ABCI specification. getTxs()returns the current list of validated transactions in the shared mempool. The elected proposer calls this method to get the transactions before constructing the new block. Similarly, removeTx() is called by the proposer after deliverTx() to remove the finalized transaction from the shared mempool. Fig 2 below shows populating the shared mempool.
 
-![image alt text](image_1.png)
+![SequenceTx](sequence.png)
 
 Fig. 2 — Populating shared mempool with sequenced, signed transactions
 
@@ -199,7 +199,7 @@ Compare fig. 2 with fig. 1. Notice that the peers
 
 Fig. 3 shows the steps that the proposer takes when it is elected to add the new block to the blockchain.
 
-![image alt text](image_2.png)
+![Propose](propose.png)
 
 Fig. 3 — Block proposal and commit
 
